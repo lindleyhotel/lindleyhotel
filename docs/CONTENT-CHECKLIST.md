@@ -27,3 +27,4 @@ Tick each item before launch. Values live in `src/config.json` unless noted.
 - [ ] **Afrikaans page** – have a first-language speaker at the hotel read `/verblyf-lindley`
 - [ ] **Google Business Profile** – see `docs/LOCAL-SEO.md`
 - [x] **Breakfast** – usually from 08:00, other times by arrangement with management (17 Nov 2026)
+- [ ] **Shop** – name (if it has one), opening hours, and whether items are made by local makers
