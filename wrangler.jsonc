@@ -1,7 +1,7 @@
 // Cloudflare Workers (static assets) configuration.
 // Build command: node build.js   ·   Deploy command: npx wrangler deploy
 {
-  "name": "lindley-hotel",
+  "name": "lindleyhotel",
   "compatibility_date": "2026-11-01",
   "assets": {
     "directory": "./dist",
