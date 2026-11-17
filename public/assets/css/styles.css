@@ -354,3 +354,4 @@ address { font-style: normal; }
 .room-card-wide { border-top: 4px solid var(--sand-500); background: var(--cream); }
 .room-card-wide .room-body { justify-content: center; padding: 2.25rem 2rem; }
 .room-card-wide .room-actions { margin-top: 1rem; }
+.facts dd.closed { color: #9a3b2e; }

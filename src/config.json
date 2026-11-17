@@ -36,10 +36,17 @@
   "checkInTo": "19:00",
   "checkOutBy": "10:00",
   "sleeps": "28",
-  "bakeryHours": "Daily 07:00 – 17:00",
-  "restaurantHours": "Daily 07:00 – 20:30",
-  "bakeryOpeningHoursSchema": "Mo-Su 07:00-17:00",
-  "restaurantOpeningHoursSchema": "Mo-Su 07:00-20:30",
+  "bakeryHours": "Mon–Fri 08:00–17:00",
+  "restaurantHours": "Tue–Sun, closed Mondays",
+  "bakeryOpeningHoursSchema": [
+    "Mo-Fr 08:00-17:00"
+  ],
+  "restaurantOpeningHoursSchema": [
+    "Tu-Th 09:00-16:00",
+    "Fr 09:00-18:00",
+    "Sa 09:00-16:00",
+    "Su 11:00-14:00"
+  ],
   "amenities": [
     "Free Wi-Fi",
     "Free secure parking",
@@ -105,6 +112,44 @@
     {
       "path": "/verblyf-lindley",
       "label": "Verblyf in Lindley (Afrikaans)"
+    }
+  ],
+  "bakeryHoursAf": "Ma–Vr 08:00–17:00",
+  "restaurantHoursAf": "Di–So, Maandae gesluit",
+  "bakeryHoursDetail": [
+    {
+      "day": "Monday – Friday",
+      "time": "08:00 – 17:00"
+    },
+    {
+      "day": "Saturday",
+      "time": "Closed"
+    },
+    {
+      "day": "Sunday",
+      "time": "Closed"
+    }
+  ],
+  "restaurantHoursDetail": [
+    {
+      "day": "Monday",
+      "time": "Closed"
+    },
+    {
+      "day": "Tuesday – Thursday",
+      "time": "09:00 – 16:00"
+    },
+    {
+      "day": "Friday",
+      "time": "09:00 – 18:00"
+    },
+    {
+      "day": "Saturday",
+      "time": "09:00 – 16:00"
+    },
+    {
+      "day": "Sunday",
+      "time": "11:00 – 14:00"
     }
   ]
 }

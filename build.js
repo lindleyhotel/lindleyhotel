@@ -142,7 +142,13 @@ function townTags() {
 
 const waIcon = '<svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.4A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.3-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.2 1.4 2.5 1.6.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.4z"/></svg>';
 
+function hoursTable(rows) {
+  return rows.map((r) => `<div><dt>${esc(r.day)}</dt><dd${r.time === 'Closed' ? ' class="closed"' : ''}>${esc(r.time)}</dd></div>`).join('\n');
+}
+
 const generated = {
+  bakeryHoursTable: hoursTable(config.bakeryHoursDetail),
+  restaurantHoursTable: hoursTable(config.restaurantHoursDetail),
   fullAddress: esc(fullAddress),
   socialLinks: socialLinks(),
   hoursList: hoursList(),

@@ -1,6 +1,6 @@
 <!--meta {
   "title": "Bakery, Take-Away & Restaurant | Lindley Hotel 1895",
-  "description": "Fresh baking, take-away and homestyle meals at the Lindley Hotel bakery and restaurant on Pretorius Street, Lindley. Open daily, breakfast available.",
+  "description": "Fresh baking, take-away and homestyle meals at the Lindley Hotel bakery and restaurant on Pretorius Street, Lindley. Bakery open weekdays, restaurant Tuesday to Sunday.",
   "path": "/bakery-restaurant",
   "nav": "dining",
   "crumb": "Bakery & Restaurant",
@@ -26,9 +26,9 @@
     <article class="feature-card">
       <p class="eyebrow">The bakery</p>
       <h2 class="feature-title">Bakery &amp; take-away</h2>
-      <p>Our bakery counter sits at the end of the veranda, under the sign that says it all. Expect fresh loaves and rolls from the oven, baked treats, and take-away food for the road.</p>
+      <p>Our bakery counter sits at the end of the veranda, under the sign that says it all. Farm-style bread, golden rolletjies, savoury pies, homemade carrot cake, chocolate cake and fudge, plus take-away food for the road. Fresh bread and hot pies are ready every weekday morning.</p>
       <dl class="facts facts-compact">
-        <div><dt>Open</dt><dd>{{bakeryHours}}</dd></div>
+        {{bakeryHoursTable}}
       </dl>
       <a class="btn btn-ghost btn-sm" href="{{whatsappUrl}}an%20order%20from%20the%20bakery" target="_blank" rel="noopener">Order ahead on WhatsApp</a>
     </article>
@@ -36,9 +36,9 @@
     <article class="feature-card">
       <p class="eyebrow">The restaurant</p>
       <h2 class="feature-title">Homestyle meals</h2>
-      <p>Hearty country cooking in a heritage dining room. Breakfast is available for hotel guests and visitors, and other meals can be arranged for groups and functions.</p>
+      <p>Hearty country cooking in our sandstone dining room: farm-style breakfasts, rump steaks, handmade beef and prego burgers, the classic Dagwood, bobotie with yellow rice, lamb curry, toasted sandwiches, wraps and the cake of the day. Booking is recommended on weekends.</p>
       <dl class="facts facts-compact">
-        <div><dt>Open</dt><dd>{{restaurantHours}}</dd></div>
+        {{restaurantHoursTable}}
       </dl>
       <a class="btn btn-ghost btn-sm" href="tel:{{phoneIntl}}">Book a table: {{phoneDisplay}}</a>
     </article>
