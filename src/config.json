@@ -24,6 +24,14 @@
   "lekkeslaapReviewsUrl": "https://www.lekkeslaap.co.za/akkommodasie/lindley-hotel-20#reviews",
   "googleBusinessUrl": "",
   "fromPrice": "R1 140",
+  "roomPrices": {
+    "luxury": "R1 600",
+    "standardDouble": "R1 320",
+    "basicDouble": "R1 140",
+    "twin": "R1 320",
+    "standardTriple": "R1 320",
+    "classicTriple": "R1 320"
+  },
   "checkInFrom": "14:00",
   "checkInTo": "19:00",
   "checkOutBy": "10:00",

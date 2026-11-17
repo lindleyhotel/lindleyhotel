@@ -24,3 +24,61 @@
     onScroll();
   }
 })();
+
+/* Photo lightbox: links with data-gallery="name" open full-size in a dialog.
+   Without JavaScript the links simply open the image. */
+(function () {
+  var links = Array.prototype.slice.call(document.querySelectorAll('a[data-gallery]'));
+  if (!links.length || typeof HTMLDialogElement !== 'function') return;
+
+  var dlg = document.createElement('dialog');
+  dlg.className = 'lightbox';
+  dlg.setAttribute('aria-label', 'Photo viewer');
+  dlg.innerHTML = '<div class="lightbox-inner"><img alt=""></div>' +
+    '<p class="lightbox-caption"></p>' +
+    '<button type="button" class="lightbox-close" aria-label="Close">×</button>' +
+    '<button type="button" class="lightbox-prev" aria-label="Previous photo">‹</button>' +
+    '<button type="button" class="lightbox-next" aria-label="Next photo">›</button>';
+  document.body.appendChild(dlg);
+
+  var img = dlg.querySelector('img');
+  var cap = dlg.querySelector('.lightbox-caption');
+  var set = [], idx = 0;
+
+  function altOf(a) { var i = a.querySelector('img'); return (i && i.alt) || a.getAttribute('aria-label') || ''; }
+  function show(i) {
+    idx = (i + set.length) % set.length;
+    img.src = set[idx].href;
+    img.alt = altOf(set[idx]);
+    cap.textContent = img.alt + (set.length > 1 ? '  ·  ' + (idx + 1) + ' / ' + set.length : '');
+    dlg.querySelector('.lightbox-prev').hidden = dlg.querySelector('.lightbox-next').hidden = set.length < 2;
+  }
+
+  links.forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      var name = a.getAttribute('data-gallery');
+      set = links.filter(function (l) { return l.getAttribute('data-gallery') === name; });
+      show(set.indexOf(a));
+      dlg.showModal();
+    });
+  });
+
+  dlg.querySelector('.lightbox-close').addEventListener('click', function () { dlg.close(); });
+  dlg.querySelector('.lightbox-prev').addEventListener('click', function () { show(idx - 1); });
+  dlg.querySelector('.lightbox-next').addEventListener('click', function () { show(idx + 1); });
+  dlg.addEventListener('click', function (e) { if (e.target === dlg || e.target.classList.contains('lightbox-inner')) dlg.close(); });
+  dlg.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowLeft') show(idx - 1);
+    if (e.key === 'ArrowRight') show(idx + 1);
+  });
+
+  var startX = null;
+  dlg.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, { passive: true });
+  dlg.addEventListener('touchend', function (e) {
+    if (startX === null) return;
+    var dx = e.changedTouches[0].clientX - startX;
+    if (Math.abs(dx) > 40) show(idx + (dx < 0 ? 1 : -1));
+    startX = null;
+  });
+})();

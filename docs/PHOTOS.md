@@ -26,3 +26,19 @@ with:
 Write alt text that describes what is in the photo. Then run `node build.js`.
 
 Tip for an AI assistant: give it the photos and say "add these to the rooms page following docs/PHOTOS.md" – it can resize and convert them to WebP.
+
+## Where the current photos are used (17 Nov 2026)
+
+| Files | Used for | How it was matched |
+|---|---|---|
+| `rooms/luxury-1..3` | Luxury Room | Four-poster king bed, couch, loft ladder (child beds), claw-foot bath – matches LekkeSlaap's "king bed, bath and shower, couch" |
+| `rooms/standard-double-1..3` | Standard Double Room | Double bed with seating area (couch) – **please confirm** |
+| `rooms/basic-double-1..2` | Basic Double Room | Shower and basin open-plan in the room – matches "open-plan, limited privacy" |
+| `rooms/twin-1` | Standard Twin Room | Two single beds |
+| `rooms/classic-triple-1..3` | Classic Triple Room | Double bed + single bed in one room |
+| `rooms/room-*` | "No two rooms are the same" gallery | Other rooms and bathrooms that couldn't be tied to one room type for certain |
+| `food/*` | Bakery & Restaurant gallery, Weddings & Events | Platters, salads, table setting |
+| `grounds/*` | Home "Around the hotel", History & Location "The grounds", Bakery page, Weddings chapters | Gardens, courtyard, chapel pews, dining room, bakery, details |
+| `rooms/luxury-romantic*` | Luxury Room gallery and Weddings "The stay" | Luxury Room dressed for a special occasion |
+
+Every photo has a full size (`name.webp`, about 1200 px) and a small size (`name-sm.webp`). To move a photo to another room, change the file names in `src/pages/rooms.html`.
