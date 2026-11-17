@@ -354,3 +354,4 @@ address { font-style: normal; }
 .chapter-photo { margin: 0 0 1.2rem; border-radius: var(--radius); overflow: hidden; aspect-ratio: 1 / 1; }
 .chapter-photo img { width: 100%; height: 100%; object-fit: cover; }
 .page-hero-photo { background-size: cover; background-position: 70% 35%; padding-block: clamp(5rem, 14vw, 9rem) clamp(3.5rem, 8vw, 5rem); }
+@media (max-width: 759px) { .hero-img { object-position: 80% 55%; } }
