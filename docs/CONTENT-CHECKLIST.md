@@ -11,7 +11,7 @@ Tick each item before launch. Values live in `src/config.json` unless noted.
 - [ ] **Room list** – twin, double, triple and family rooms (from LekkeSlaap). Correct bed types and guest numbers per room? (`src/pages/rooms.html`)
 - [x] **Room photos** – added 17 Nov 2026 (see `docs/PHOTOS.md` for which photo went where)
 - [x] **Standard Triple Room** – photos matched 17 Nov 2026 (confirmed against LekkeSlaap)
-- [ ] **Room matches to confirm** – Standard Double photos (white iron bed, leaf linen) chosen because that room has a couch/seating area; is that right? Is the grey sleigh-bed room a Twin or the Standard Triple?
+- [x] **Room matches** – confirmed 17 Nov 2026: leaf-print, sandstone-wall and London rooms are all Standard Doubles; sleigh-bed room is the Standard Triple
 - [ ] **Room prices** – "from" prices taken from LekkeSlaap on 17 Nov 2026 (`roomPrices` in config); update if rates change
 - [ ] **Table-setting photo** – confirm it was taken at the hotel (now only in the kitchen gallery)
 - [x] **Chapel** – confirmed by the wedding photos
