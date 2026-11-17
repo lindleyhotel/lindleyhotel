@@ -99,8 +99,9 @@
       prev.disabled = i === 0;
       next.disabled = i === total - 1;
     }
-    prev.addEventListener('click', function () { track.scrollBy({ left: -track.clientWidth }); });
-    next.addEventListener('click', function () { track.scrollBy({ left: track.clientWidth }); });
+    function go(i) { i = Math.max(0, Math.min(total - 1, i)); track.scrollTo({ left: i * track.clientWidth, behavior: 'smooth' }); }
+    prev.addEventListener('click', function () { go(index() - 1); });
+    next.addEventListener('click', function () { go(index() + 1); });
     track.addEventListener('scroll', function () { window.requestAnimationFrame(update); }, { passive: true });
     update();
   });
