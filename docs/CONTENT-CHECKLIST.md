@@ -2,13 +2,13 @@
 
 Tick each item before launch. Values live in `src/config.json` unless noted.
 
-- [ ] **Domain** for `siteUrl` (currently a placeholder: lindleyhotel.co.za)
+- [x] **Domain** for `siteUrl` – lindleyhotel1895.co.za, live 17 Nov 2026
 - [ ] **Email** – is `lindleyhotel@gmail.com` correct?
 - [ ] **WhatsApp** – does 063 115 6628 take WhatsApp messages?
-- [ ] **Bakery hours** (currently daily 07:00 – 17:00)
-- [ ] **Restaurant hours** (currently daily 07:00 – 20:30)
+- [x] **Bakery hours** (currently daily 07:00 – 17:00)
+- [x] **Restaurant hours** (currently daily 07:00 – 20:30)
 - [ ] **"From" price** – LekkeSlaap showed from R1 140 per night for two (17 Nov 2026). Keep, update, or remove?
-- [ ] **Room list** – twin, double, triple and family rooms (from LekkeSlaap). Correct bed types and guest numbers per room? (`src/pages/rooms.html`)
+- [x] **Room list** – twin, double, triple and family rooms (from LekkeSlaap). Correct bed types and guest numbers per room? (`src/pages/rooms.html`)
 - [x] **Room photos** – added 17 Nov 2026 (see `docs/PHOTOS.md` for which photo went where)
 - [x] **Standard Triple Room** – photos matched 17 Nov 2026 (confirmed against LekkeSlaap)
 - [x] **Room matches** – confirmed 17 Nov 2026: leaf-print, sandstone-wall and London rooms are all Standard Doubles; sleigh-bed room is the Standard Triple
@@ -16,8 +16,8 @@ Tick each item before launch. Values live in `src/config.json` unless noted.
 - [ ] **Table-setting photo** – confirm it was taken at the hotel (now only in the kitchen gallery)
 - [x] **Chapel** – confirmed by the wedding photos
 - [ ] **Wedding photos** – get the couple's and the photographer's permission to use them on the site (and add a photographer credit if they want one)
-- [ ] **Bakery, restaurant and chapel photos**
-- [ ] **Facebook / Instagram** links (`social` in config – they appear automatically when filled in)
+- [x] **Bakery, restaurant and chapel photos**
+- [x] **Facebook / Instagram** links (`social` in config – they appear automatically when filled in)
 - [ ] **Chapel** – capacity and wedding packages, if they want them on the site
 - [ ] **Hairstylist & beautician** – still on site? (home page list)
 - [ ] **History** – any confirmed stories about the building to add (`src/pages/history-location.html`)
