@@ -82,3 +82,26 @@
     startX = null;
   });
 })();
+
+/* Room photo sliders: arrows + swipe (native scroll-snap), with a "1 / 3" counter. */
+(function () {
+  document.querySelectorAll('[data-slider]').forEach(function (slider) {
+    var track = slider.querySelector('[data-slides]');
+    var prev = slider.querySelector('[data-prev]');
+    var next = slider.querySelector('[data-next]');
+    var count = slider.querySelector('[data-count]');
+    var total = track.children.length;
+    if (total < 2) return;
+    function index() { return Math.round(track.scrollLeft / track.clientWidth); }
+    function update() {
+      var i = index();
+      if (count) count.textContent = (i + 1) + ' / ' + total;
+      prev.disabled = i === 0;
+      next.disabled = i === total - 1;
+    }
+    prev.addEventListener('click', function () { track.scrollBy({ left: -track.clientWidth }); });
+    next.addEventListener('click', function () { track.scrollBy({ left: track.clientWidth }); });
+    track.addEventListener('scroll', function () { window.requestAnimationFrame(update); }, { passive: true });
+    update();
+  });
+})();
