@@ -37,7 +37,7 @@
   "checkOutBy": "10:00",
   "sleeps": "28",
   "bakeryHours": "Mon–Fri 08:00–17:00",
-  "restaurantHours": "Tue–Sun, closed Mondays",
+  "restaurantHours": "Tue–Sun · Mon hotel guests only",
   "bakeryOpeningHoursSchema": [
     "Mo-Fr 08:00-17:00"
   ],
@@ -115,7 +115,7 @@
     }
   ],
   "bakeryHoursAf": "Ma–Vr 08:00–17:00",
-  "restaurantHoursAf": "Di–So, Maandae gesluit",
+  "restaurantHoursAf": "Di–So · Ma slegs hotelgaste",
   "bakeryHoursDetail": [
     {
       "day": "Monday – Friday",
@@ -133,7 +133,7 @@
   "restaurantHoursDetail": [
     {
       "day": "Monday",
-      "time": "Closed"
+      "time": "Hotel guests only"
     },
     {
       "day": "Tuesday – Thursday",
