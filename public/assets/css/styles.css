@@ -209,15 +209,11 @@ address { font-style: normal; }
 .center-actions.left { justify-content: flex-start; }
 
 /* ---------- Inner page hero ---------- */
-.page-hero { position: relative; background: var(--green-900); color: var(--cream); padding-block: clamp(3.5rem, 9vw, 6rem) clamp(3rem, 7vw, 4.5rem); margin-bottom: 18px; }
+.page-hero { position: relative; background: var(--green-900); color: var(--cream); padding-block: clamp(3.5rem, 9vw, 6rem) clamp(3rem, 7vw, 4.5rem); }
 .page-hero-slim { margin-bottom: 0; }
 .page-title { color: var(--cream); font-size: clamp(2.4rem, 6.5vw, 4.4rem); font-weight: 500; max-width: 16ch; }
 .page-lead { max-width: 38rem; color: rgba(247, 242, 232, .88); font-size: 1.12rem; }
 
-/* Broekie-lace edge (original motif inspired by the veranda ironwork) */
-.lace { height: 18px; background-repeat: repeat-x; background-size: 36px 18px; }
-.lace-bottom { position: absolute; left: 0; right: 0; bottom: -18px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='18' viewBox='0 0 36 18'%3E%3Cpath d='M0 0h36a18 18 0 0 1-36 0z' fill='%231c2e25'/%3E%3Ccircle cx='18' cy='6' r='3' fill='%23fbf8f2'/%3E%3C/svg%3E"); }
-.lace-top { position: absolute; left: 0; right: 0; top: -17px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='18' viewBox='0 0 36 18'%3E%3Cpath d='M0 18h36a18 18 0 0 0-36 0z' fill='%23142019'/%3E%3Ccircle cx='18' cy='12' r='3' fill='%23fbf8f2'/%3E%3C/svg%3E"); }
 
 /* ---------- Rooms ---------- */
 .room-grid { display: grid; gap: 1.75rem; }
