@@ -1,0 +1,128 @@
+<!--meta {
+  "title": "Rooms & Rates | Lindley Hotel 1895, Free State",
+  "description": "Accommodation in Lindley, Free State: twin, double, triple and family rooms at the historic Lindley Hotel. En-suite showers, electric blankets, Wi-Fi, secure parking.",
+  "path": "/rooms",
+  "nav": "rooms",
+  "priority": "0.9",
+  "crumb": "Rooms",
+  "faq": [
+    {"q": "How do I book a room at the Lindley Hotel?", "a": "Tap any Book on LekkeSlaap button. It opens our listing on LekkeSlaap, where you choose your dates and room and confirm your booking securely."},
+    {"q": "Can I book by phone or WhatsApp instead?", "a": "Yes. Call or WhatsApp reception on {{phoneDisplay}} and we'll help you directly."},
+    {"q": "What time is check-in and check-out?", "a": "Check-in is from {{checkInFrom}} to {{checkInTo}} and check-out is by {{checkOutBy}}. If you'll arrive after {{checkInTo}}, please call reception so we can arrange your check-in."},
+    {"q": "Are the rooms warm in winter?", "a": "Our rooms have electric blankets for cold Free State nights."},
+    {"q": "I'm booking for a wedding or group. Who do I speak to?", "a": "For group bookings, contact reception directly so we can hold the right mix of rooms for your guests."}
+  ]
+} -->
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow eyebrow-light">Accommodation</p>
+    <h1 class="page-title">Rooms with a story</h1>
+    <p class="page-lead">Comfortable rooms in a building that has welcomed travellers since 1895. Rooms from {{fromPrice}} per night for two people.</p>
+  </div>
+  <div class="lace lace-bottom" aria-hidden="true"></div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Choose your room</p>
+      <h2 class="section-title">Four ways to stay</h2>
+      <p class="section-sub">Live prices and availability for every room are on LekkeSlaap. Rates change with the season and the number of guests.</p>
+    </div>
+
+    <div class="room-grid">
+      <!-- To add photos: see docs/PHOTOS.md. Replace the .photo-slot div with a <picture>. -->
+      <article class="room-card">
+        <div class="photo-slot" role="img" aria-label="Twin room photo coming soon"><span>Photo coming soon</span></div>
+        <div class="room-body">
+          <h3 class="room-title">Twin Room</h3>
+          <p class="room-meta">Two single beds · 2 guests</p>
+          <p>A cosy room for friends, colleagues or travelling companions who'd like a bed each.</p>
+          <div class="room-actions">
+            <a class="btn btn-sand btn-sm" href="{{lekkeslaapUrl}}" target="_blank" rel="noopener" data-book>Book on LekkeSlaap <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-ghost btn-sm" href="{{whatsappUrl}}a%20Twin%20Room" target="_blank" rel="noopener">Ask reception</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="room-card">
+        <div class="photo-slot" role="img" aria-label="Double room photo coming soon"><span>Photo coming soon</span></div>
+        <div class="room-body">
+          <h3 class="room-title">Double Room</h3>
+          <p class="room-meta">One double bed · 2 guests</p>
+          <p>A comfortable room for couples, with heritage character and modern comforts.</p>
+          <div class="room-actions">
+            <a class="btn btn-sand btn-sm" href="{{lekkeslaapUrl}}" target="_blank" rel="noopener" data-book>Book on LekkeSlaap <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-ghost btn-sm" href="{{whatsappUrl}}a%20Double%20Room" target="_blank" rel="noopener">Ask reception</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="room-card">
+        <div class="photo-slot" role="img" aria-label="Triple room photo coming soon"><span>Photo coming soon</span></div>
+        <div class="room-body">
+          <h3 class="room-title">Triple Room</h3>
+          <p class="room-meta">3 guests</p>
+          <p>A spacious room for three, ideal for small families or friends travelling together.</p>
+          <div class="room-actions">
+            <a class="btn btn-sand btn-sm" href="{{lekkeslaapUrl}}" target="_blank" rel="noopener" data-book>Book on LekkeSlaap <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-ghost btn-sm" href="{{whatsappUrl}}a%20Triple%20Room" target="_blank" rel="noopener">Ask reception</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="room-card">
+        <div class="photo-slot" role="img" aria-label="Family room photo coming soon"><span>Photo coming soon</span></div>
+        <div class="room-body">
+          <h3 class="room-title">Family Room</h3>
+          <p class="room-meta">For larger groups</p>
+          <p>Room for the whole family under one roof, a good base for reunions, weddings and long weekends.</p>
+          <div class="room-actions">
+            <a class="btn btn-sand btn-sm" href="{{lekkeslaapUrl}}" target="_blank" rel="noopener" data-book>Book on LekkeSlaap <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-ghost btn-sm" href="{{whatsappUrl}}the%20Family%20Room" target="_blank" rel="noopener">Ask reception</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">In your room</p>
+      <h2 class="section-title">Included with your stay</h2>
+      <ul class="tick-list">
+        <li>En-suite bathroom with shower (most rooms)</li>
+        <li>Electric blankets</li>
+        <li>Complimentary toiletries</li>
+        <li>Tea and coffee station</li>
+        <li>Free Wi-Fi</li>
+        <li>Free secure parking</li>
+      </ul>
+    </div>
+    <div>
+      <p class="eyebrow">Your stay</p>
+      <h2 class="section-title">Arrival &amp; departure</h2>
+      <dl class="facts">
+        <div><dt>Check-in</dt><dd>{{checkInFrom}} – {{checkInTo}}</dd></div>
+        <div><dt>Check-out</dt><dd>By {{checkOutBy}}</dd></div>
+        <div><dt>Breakfast</dt><dd>Available in the restaurant</dd></div>
+        <div><dt>Children</dt><dd>All ages welcome</dd></div>
+      </dl>
+      <p class="small-print">Arriving after {{checkInTo}}? Please call reception on <a href="tel:{{phoneIntl}}">{{phoneDisplay}}</a> so we can arrange your check-in.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap narrow">
+    <div class="section-head">
+      <p class="eyebrow">Questions</p>
+      <h2 class="section-title">How booking works</h2>
+    </div>
+    {{faqBlock}}
+  </div>
+</section>
+
+{{> booking-band}}

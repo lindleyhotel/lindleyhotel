@@ -1,0 +1,54 @@
+<!--meta {
+  "title": "Bakery, Take-Away & Restaurant | Lindley Hotel 1895",
+  "description": "Fresh baking, take-away and homestyle meals at the Lindley Hotel bakery and restaurant on Pretorius Street, Lindley. Open daily, breakfast available.",
+  "path": "/bakery-restaurant",
+  "nav": "dining",
+  "crumb": "Bakery & Restaurant",
+  "priority": "0.8"
+} -->
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow eyebrow-light">Bakery · Take-away · Restaurant</p>
+    <h1 class="page-title">Baked this morning, served all day</h1>
+    <p class="page-lead">Pop in for fresh bread and a take-away, or settle in at the restaurant for a homestyle meal. You don't need to stay over to eat with us.</p>
+  </div>
+  <div class="lace lace-bottom" aria-hidden="true"></div>
+</section>
+
+<section class="section">
+  <div class="wrap two-cards">
+    <article class="feature-card">
+      <p class="eyebrow">The bakery</p>
+      <h2 class="feature-title">Bakery &amp; take-away</h2>
+      <p>Our bakery counter sits at the end of the veranda, under the sign that says it all. Expect fresh bread and baked treats, plus take-away food for the road.</p>
+      <dl class="facts facts-compact">
+        <div><dt>Open</dt><dd>{{bakeryHours}}</dd></div>
+      </dl>
+      <a class="btn btn-ghost btn-sm" href="{{whatsappUrl}}an%20order%20from%20the%20bakery" target="_blank" rel="noopener">Order ahead on WhatsApp</a>
+    </article>
+
+    <article class="feature-card">
+      <p class="eyebrow">The restaurant</p>
+      <h2 class="feature-title">Homestyle meals</h2>
+      <p>Hearty country cooking in a heritage dining room. Breakfast is available for hotel guests and visitors, and other meals can be arranged for groups and functions.</p>
+      <dl class="facts facts-compact">
+        <div><dt>Open</dt><dd>{{restaurantHours}}</dd></div>
+      </dl>
+      <a class="btn btn-ghost btn-sm" href="tel:{{phoneIntl}}">Book a table: {{phoneDisplay}}</a>
+    </article>
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="wrap narrow center">
+    <p class="eyebrow">Groups &amp; functions</p>
+    <h2 class="section-title">Feeding a crowd?</h2>
+    <p>From a birthday lunch to a wedding reception, our kitchen can cater for your group. Tell us the date, the number of guests and what you have in mind, and we'll put together a plan.</p>
+    <div class="center-actions">
+      <a class="btn btn-green" href="{{whatsappUrl}}catering%20for%20a%20group" target="_blank" rel="noopener">WhatsApp us</a>
+      <a class="btn btn-ghost" href="mailto:{{email}}?subject=Catering%20enquiry">Email us</a>
+    </div>
+  </div>
+</section>
+
+{{> booking-band}}

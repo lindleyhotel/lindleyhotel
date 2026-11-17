@@ -1,0 +1,102 @@
+{
+  "siteUrl": "https://lindleyhotel.co.za",
+  "name": "Lindley Hotel",
+  "alternateNames": [
+    "Lindley Hotel 1895",
+    "The Lindley Hotel"
+  ],
+  "established": "1895",
+  "seoDescription": "Heritage hotel in Lindley, Free State, built in 1895. En-suite rooms, an on-site bakery and restaurant, and a chapel for weddings. Book on LekkeSlaap or call reception.",
+  "phoneDisplay": "063 115 6628",
+  "phoneIntl": "+27631156628",
+  "whatsappNumber": "27631156628",
+  "whatsappGreeting": "Hello Lindley Hotel, I'd like to ask about ",
+  "email": "lindleyhotel@gmail.com",
+  "address": {
+    "street": "1 Pretorius Street",
+    "town": "Lindley",
+    "postalCode": "9630",
+    "province": "Free State",
+    "country": "ZA"
+  },
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lindley+Hotel%2C+1+Pretorius+Street%2C+Lindley%2C+9630",
+  "lekkeslaapUrl": "https://www.lekkeslaap.co.za/akkommodasie/lindley-hotel-20",
+  "lekkeslaapReviewsUrl": "https://www.lekkeslaap.co.za/akkommodasie/lindley-hotel-20#reviews",
+  "googleBusinessUrl": "",
+  "fromPrice": "R1 140",
+  "checkInFrom": "14:00",
+  "checkInTo": "19:00",
+  "checkOutBy": "10:00",
+  "sleeps": "28",
+  "bakeryHours": "Daily 07:00 – 17:00",
+  "restaurantHours": "Daily 07:00 – 20:30",
+  "bakeryOpeningHoursSchema": "Mo-Su 07:00-17:00",
+  "restaurantOpeningHoursSchema": "Mo-Su 07:00-20:30",
+  "amenities": [
+    "Free Wi-Fi",
+    "Free secure parking",
+    "En-suite bathrooms",
+    "Electric blankets",
+    "Tea and coffee station",
+    "Breakfast available",
+    "On-site restaurant",
+    "On-site bakery",
+    "Chapel"
+  ],
+  "social": {
+    "facebook": "",
+    "instagram": ""
+  },
+  "nearbyTowns": [
+    {
+      "name": "Bethlehem",
+      "note": "About 60 km south-east on the R76"
+    },
+    {
+      "name": "Kroonstad",
+      "note": "North-west on the R76, via Steynsrus"
+    },
+    {
+      "name": "Steynsrus",
+      "note": "On the R76 towards Kroonstad"
+    },
+    {
+      "name": "Reitz",
+      "note": "East of Lindley, our Nketoana neighbour"
+    },
+    {
+      "name": "Petrus Steyn",
+      "note": "North-east, our Nketoana neighbour"
+    },
+    {
+      "name": "Arlington",
+      "note": "Just south, our Nketoana neighbour"
+    },
+    {
+      "name": "Senekal",
+      "note": "South-west, past Arlington"
+    },
+    {
+      "name": "Gauteng",
+      "note": "About 155 km by road from Vereeniging"
+    }
+  ],
+  "nearbyPages": [
+    {
+      "path": "/accommodation-near-bethlehem",
+      "label": "Accommodation near Bethlehem"
+    },
+    {
+      "path": "/r76-stopover",
+      "label": "R76 stopover: Kroonstad to Bethlehem"
+    },
+    {
+      "path": "/accommodation-reitz-petrus-steyn-arlington",
+      "label": "Near Reitz, Petrus Steyn & Arlington"
+    },
+    {
+      "path": "/verblyf-lindley",
+      "label": "Verblyf in Lindley (Afrikaans)"
+    }
+  ]
+}

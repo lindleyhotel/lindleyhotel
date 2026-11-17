@@ -1,0 +1,72 @@
+<!--meta {
+  "title": "History & Location | Lindley Hotel 1895, Pretorius Street, Lindley",
+  "description": "The Lindley Hotel was built in 1895 in Lindley, on the Vals River and the R76 between Kroonstad and Bethlehem. Things to do in Lindley and directions to 1 Pretorius Street.",
+  "path": "/history-location",
+  "nav": "visit",
+  "crumb": "History & Location",
+  "priority": "0.7"
+} -->
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow eyebrow-light">History &amp; location</p>
+    <h1 class="page-title">A landmark on Pretorius Street</h1>
+    <p class="page-lead">Built in 1895 and lovingly restored, the Lindley Hotel blends old-world character with the comforts of today.</p>
+  </div>
+  <div class="lace lace-bottom" aria-hidden="true"></div>
+</section>
+
+<section class="section">
+  <div class="wrap narrow prose">
+    <p class="eyebrow">Our story</p>
+    <h2 class="section-title">The hotel and the town</h2>
+    <p>Lindley was laid out in 1875 on the banks of the Vals River and proclaimed a town in 1878. It takes its name from Daniel Lindley, an American missionary who was the first ordained minister to the Voortrekkers in Natal. The Basotho name for the town, Ntha, comes from the river.</p>
+    <p>The hotel was built in 1895, just seventeen years after the town was proclaimed, and has been restored to keep its original character. Its sandstone walls, deep veranda and lace ironwork still speak of that era.</p>
+    <p>The town itself has lived through remarkable history, including the Anglo-Boer War, when Lindley briefly served as the seat of the Free State government in May 1900. Today it's a quiet farming town with old churches, river walks and a warm country welcome.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap narrow">
+    <p class="eyebrow">While you're here</p>
+    <h2 class="section-title">Things to see in and around Lindley</h2>
+    <ul class="tick-list">
+      <li>The Vals River, where a weir holds back a long stretch of water for fishing, boating and picnics</li>
+      <li>Lindley Roller Mills, the town's working mill</li>
+      <li>St Stephen's Church and the town's other historic churches</li>
+      <li>The Toeka Museum and the Lindley clock tower</li>
+      <li>Anglo-Boer War history, including the 1900 battle sites near town</li>
+      <li>The Riemland Heritage Route through the surrounding farmland</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">Find us</p>
+      <h2 class="section-title">Getting here</h2>
+      <address class="big-address">
+        {{name}}<br>
+        {{address.street}}<br>
+        {{address.town}}, {{address.postalCode}}<br>
+        {{address.province}}, South Africa
+      </address>
+      <p>Lindley lies in the eastern Free State on the R76 between Kroonstad and Bethlehem, about 60 km north-west of Bethlehem and roughly 155 km by road from Vereeniging.</p>
+      <div class="center-actions left">
+        <a class="btn btn-green" href="{{mapsUrl}}" target="_blank" rel="noopener">Open in Google Maps <span aria-hidden="true">↗</span></a>
+        <a class="btn btn-ghost" href="tel:{{phoneIntl}}">Call {{phoneDisplay}}</a>
+      </div>
+    </div>
+    <div>
+      <p class="eyebrow">Hours</p>
+      <h2 class="section-title">When we're open</h2>
+      <ul class="hours-list hours-list-dark">
+        {{hoursList}}
+      </ul>
+      <p class="small-print">Secure parking is available on the property for hotel guests.</p>
+    </div>
+  </div>
+</section>
+
+{{> towns}}
+{{> booking-band}}

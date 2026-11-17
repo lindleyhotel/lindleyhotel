@@ -1,0 +1,46 @@
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <img src="/assets/img/logo-cream-160.webp" width="96" height="96" alt="Lindley Hotel 1895 logo" loading="lazy">
+      <p>A heritage hotel, bakery and restaurant on Pretorius Street, Lindley, welcoming travellers to the eastern Free State since {{established}}.</p>
+      {{socialLinks}}
+    </div>
+    <div>
+      <h2 class="footer-title">Visit</h2>
+      <address class="footer-address">
+        {{address.street}}<br>{{address.town}}, {{address.postalCode}}<br>{{address.province}}, South Africa
+      </address>
+      <p><a href="{{mapsUrl}}" target="_blank" rel="noopener">Get directions ↗</a></p>
+    </div>
+    <div>
+      <h2 class="footer-title">Contact</h2>
+      <ul class="footer-list">
+        <li><a href="tel:{{phoneIntl}}">{{phoneDisplay}}</a></li>
+        <li><a href="{{whatsappUrl}}" target="_blank" rel="noopener">WhatsApp reception</a></li>
+        <li><a href="mailto:{{email}}">{{email}}</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="footer-title">Nearby</h2>
+      <ul class="footer-list">
+        {{nearbyLinks}}
+      </ul>
+    </div>
+    <div>
+      <h2 class="footer-title">Hours</h2>
+      <ul class="hours-list">
+        {{hoursList}}
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-base">
+    <p>© {{year}} {{name}}. All rights reserved.</p>
+    <p><a href="/privacy">Privacy notice</a> · Bookings via <a href="{{lekkeslaapUrl}}" target="_blank" rel="noopener">LekkeSlaap</a></p>
+  </div>
+</footer>
+
+<div class="mobile-actions" aria-label="Quick actions">
+  <a href="tel:{{phoneIntl}}">Call</a>
+  <a href="{{whatsappUrl}}" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="mobile-actions-book" href="{{lekkeslaapUrl}}" target="_blank" rel="noopener" data-book>Book</a>
+</div>

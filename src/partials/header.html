@@ -1,0 +1,29 @@
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <span><a href="tel:{{phoneIntl}}" class="topbar-link">Reception {{phoneDisplay}}</a> · <a href="{{whatsappUrl}}" class="topbar-link" target="_blank" rel="noopener">WhatsApp</a></span>
+    <span class="topbar-addr">{{address.street}}, {{address.town}} · {{address.province}}</span>
+  </div>
+</div>
+<header class="site-header" data-header>
+  <div class="wrap header-inner">
+    <a class="brand" href="/" aria-label="{{name}} – home">
+      <img src="/assets/img/logo-ink-160.webp" width="56" height="56" alt="">
+      <span class="brand-text"><span class="brand-name">Lindley Hotel</span><span class="brand-est">Est. {{established}}</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <span class="nav-toggle-bars" aria-hidden="true"></span><span class="nav-toggle-label">Menu</span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main" data-nav>
+      <ul>
+        <li><a href="/rooms" {{nav:rooms}}>Rooms</a></li>
+        <li><a href="/bakery-restaurant" {{nav:dining}}>Bakery &amp; Restaurant</a></li>
+        <li><a href="/weddings-events" {{nav:events}}>Weddings &amp; Events</a></li>
+        <li><a href="/history-location" {{nav:visit}}>History &amp; Location</a></li>
+      </ul>
+      <div class="nav-ctas">
+        <a class="btn btn-ghost btn-sm" href="{{whatsappUrl}}" target="_blank" rel="noopener">{{waIcon}} WhatsApp</a>
+        <a class="btn btn-sand btn-sm" href="{{lekkeslaapUrl}}" target="_blank" rel="noopener" data-book>Book a room</a>
+      </div>
+    </nav>
+  </div>
+</header>
