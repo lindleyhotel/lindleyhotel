@@ -368,3 +368,6 @@ address { font-style: normal; }
 .slider-next { right: .75rem; }
 .gallery figure { margin: 0; aspect-ratio: 3 / 2; overflow: hidden; border-radius: var(--radius); }
 .gallery figure img { width: 100%; height: 100%; object-fit: cover; }
+.venue-photo { margin: -2.5rem -2.5rem 1.5rem; aspect-ratio: 16 / 9; overflow: hidden; border-radius: var(--radius) var(--radius) 0 0; }
+@media (max-width: 700px) { .venue-photo { margin: -1.5rem -1.5rem 1.25rem; } }
+.venue-photo img { width: 100%; height: 100%; object-fit: cover; }
