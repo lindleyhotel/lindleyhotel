@@ -19,7 +19,15 @@
 
   var header = document.querySelector('[data-header]');
   if (header) {
-    var onScroll = function () { header.classList.toggle('is-scrolled', window.scrollY > 8); };
+    var ticking = false;
+    var onScroll = function () {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(function () {
+        header.classList.toggle('is-scrolled', window.scrollY > 8);
+        ticking = false;
+      });
+    };
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
   }
@@ -103,6 +111,6 @@
     prev.addEventListener('click', function () { go(index() - 1); });
     next.addEventListener('click', function () { go(index() + 1); });
     track.addEventListener('scroll', function () { window.requestAnimationFrame(update); }, { passive: true });
-    update();
+    window.requestAnimationFrame(update);
   });
 })();

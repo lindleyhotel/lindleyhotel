@@ -161,6 +161,9 @@ const generated = {
   whatsappUrl: esc(`https://wa.me/${config.whatsappNumber}?text=${encodeURIComponent(config.whatsappGreeting)}`),
 };
 const perPage = (page) => ({
+  pageHead: page.nav === 'home'
+    ? '<link rel="preload" as="image" type="image/webp" imagesrcset="/assets/img/hotel-front-640-v2.webp 640w, /assets/img/hotel-front-960-v2.webp 960w, /assets/img/hotel-front-1600-v2.webp 1600w" imagesizes="100vw" fetchpriority="high">'
+    : '',
   faqBlock: faqHtml(page.faq),
   pageJsonLd: faqJsonLd(page.faq) + breadcrumbJsonLd(page),
 });
