@@ -11,7 +11,7 @@
   "phoneIntl": "+27631156628",
   "whatsappNumber": "27631156628",
   "whatsappGreeting": "Hello Lindley Hotel, I'd like to ask about ",
-  "email": "lindleyhotel@gmail.com",
+  "email": "Lindley4me@gmail.com",
   "address": {
     "street": "1 Pretorius Street",
     "town": "Lindley",
@@ -35,7 +35,7 @@
   "checkInFrom": "14:00",
   "checkInTo": "19:00",
   "checkOutBy": "10:00",
-  "sleeps": "28",
+  "sleeps": "26",
   "bakeryHours": "Mon–Fri 08:00–17:00",
   "restaurantHours": "Tue–Sun · Mon hotel guests only",
   "bakeryOpeningHoursSchema": [
@@ -94,7 +94,7 @@
     },
     {
       "name": "Gauteng",
-      "note": "About 155 km by road from Vereeniging"
+      "note": "OR Tambo International Airport is about 238 km away"
     }
   ],
   "nearbyPages": [

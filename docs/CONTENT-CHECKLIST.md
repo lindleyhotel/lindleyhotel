@@ -23,7 +23,7 @@ Tick each item before launch. Values live in `src/config.json` unless noted.
 - [ ] **History** – any confirmed stories about the building to add (`src/pages/history-location.html`)
 - [ ] **Hero photo** – the current front photo looks AI-enhanced; a real photo taken at golden hour would be better
 - [x] **Privacy notice** – who is the responsible person / information officer?
-- [ ] **Town distances** – only Bethlehem (~60 km) and Vereeniging (~155 km by road) are stated. Add driving distances/times to Kroonstad, Reitz, Petrus Steyn, Arlington and Senekal if the hotel knows them (`nearbyTowns` in config)
+- [ ] **Town distances** – only Bethlehem (~60 km) and OR Tambo airport (~238 km) are stated. Add driving distances/times to Kroonstad, Reitz, Petrus Steyn, Arlington and Senekal if the hotel knows them (`nearbyTowns` in config)
 - [ ] **Afrikaans page** – have a first-language speaker at the hotel read `/verblyf-lindley`
 - [x] **Google Business Profile** – see `docs/LOCAL-SEO.md`
 - [x] **Breakfast** – usually from 08:00, other times by arrangement with management (17 Nov 2026)
